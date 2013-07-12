@@ -7,9 +7,10 @@ var fichero=fs.readFileSync('index.html');
 
 
 app.get('/', function(request, response) {
+  response.send(fichero);
   response.send('Hello World 5!');
   reasponse.send("adiossss");
-  response.send(fichero);
+  
   reasponse.send("adios");
 });
 
