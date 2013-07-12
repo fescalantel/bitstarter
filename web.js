@@ -8,10 +8,7 @@ var fichero=fs.readFileSync('index.html').toString();
 
 app.get('/', function(request, response) {
   response.send(fichero);
-  response.send('Hello World 5!');
-  reasponse.send("adiossss");
-  
-  reasponse.send("adios");
+  //response.send('Hello World 2!');
 });
 
 var port = process.env.PORT || 5000;
