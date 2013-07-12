@@ -3,12 +3,13 @@ var fs=require('fs');
 
 var app = express.createServer(express.logger());
 
-var fichero=fs.readFile('index.html');
+var fichero=fs.readFileSync('index.html');
 
 
 app.get('/', function(request, response) {
   response.send('Hello World 2!');
   response.send(fichero);
+  reasponse.send("adios");
 });
 
 var port = process.env.PORT || 5000;
